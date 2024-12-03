@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Closet!</title>
+    <style>
+        body {
+             background-image: url(noyebook.png);
+            background-position: center;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        }
+
+        .container {
+            text-align: left;
+            margin-left: 450px;
+
+
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 200px); 
+            grid-gap: 10px;
+            justify-content: center;
+
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            width: 150px;
+            margin: 10px;
+            cursor: pointer; 
+        }
+
+        h1 {
+            font-size: 30px;
+            font-family: Shadows Into Light Two;
+            color: black; 
+            margin: 20px; 
+            margin-left: 100px;
+            margin-top: 180px;
+        }
+
+        h2 {
+            position: absolute;
+            font-size: 25px;
+            font-family: Shadows Into Light Two;
+            color: black;
+            left: 55px;
+            top: 160px;
+
+        }
+
+        .doodle-img {
+         position: absolute;
+        top: -160px;
+        left: -20px;
+        width: 300px;
+        height: auto;
+        }
+
+        .doodle2-img {
+        position: absolute;
+        width: 300px;
+        top: 550px;
+        left: 80px;
+        }
+
+
+
+        .sticker1 {
+            position: absolute;
+            width: 300px;
+            top: 570px;
+            left: -25px;
+        }
+
+        .sticker3 {
+            position: absolute;
+            width: 300px;
+            top: -20px;
+            left: 90px;
+        }
+
+
+        .juliascloset2 {
+            position: absolute;
+            width: 900px;
+            top: 10px;
+            left: 450px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Let's pick an outfit <3 !</h1>
+        <h2>Drag the clothing here!</h2>
+        <img class="draggable" src="images_2/p1.png" alt="p1">
+        <img class="draggable" src="images_2/p2.png" alt="p2">
+        <img class="draggable" src="images_2/p3.png" alt="p3">
+        <img class="draggable" src="images_2/p4.png" alt="p4">
+        <img class="draggable" src="images_2/p5.png" alt="p5">
+        <img class="draggable" src="images_2/s1.png" alt="s1">
+        <img class="draggable" src="images_2/s2.png" alt="s2">
+        <img class="draggable" src="images_2/s3.png" alt="s3">
+        <img class="draggable" src="images_2/s4.png" alt="s4"> 
+        <img class="draggable" src="images_2/s5.png" alt="s5">
+        <img class="draggable" src="images_2/t1.png" alt="t1">
+        <img class="draggable" src="images_2/t2.png" alt="t2">
+        <img class="draggable" src="images_2/t3.png" alt="t3">
+        <img class="draggable" src="images_2/t4.png" alt="t4"> 
+        <img class="draggable" src="images_2/t5.png" alt="t5">
+        <img class="draggable" src="images_2/sh1.png" alt="sh1">
+        <img class="draggable" src="images_2/sh2.png" alt="sh2">
+        <img class="draggable" src="images_2/sh3.png" alt="sh3">
+        <img class="draggable" src="images_2/sh4.png" alt="sh4"> 
+        <img class="draggable" src="images_2/sh5.png" alt="sh5">
+
+    </div>
+
+        
+    <img src="images/doodle.png" class="doodle-img">
+    <img src="images/doodle2.png" class="doodle2-img">
+    <img src="images/sticker2.png" class="sticker3">
+    <img src="images/sticker1.png" class="sticker1">
+    <img src="images/juliascloset2.png" class="juliascloset2">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+
+  <script>
+    $( function() {
+        $( ".draggable" ).draggable();
+    } );
+  </script>
+
+
+</body>
+</html>
